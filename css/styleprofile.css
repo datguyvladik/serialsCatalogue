@@ -1,0 +1,493 @@
+.main{
+    height: 100%;
+    background-color: #262837;
+    cursor: default;
+}
+
+*{
+    font-family: 'Merriweather', serif;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color: #2b2e4a;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    z-index: 4;
+}
+
+.headerlogo img:hover{
+    cursor: pointer;
+}
+
+.searchicon{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.headericon{
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.headericon i{
+    cursor: pointer;
+}
+.headerleft{
+    flex: 1 1 ;
+}
+
+.headerright{
+    flex: 2 1 ;
+    text-align: right;
+}
+
+.headericon:hover{
+    color:#e8454a;
+}
+.headerlogo img{
+    width: 100%;
+}
+
+.headerlogo{
+    width: 40px;
+    height: 40px;
+    padding: 15px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    min-height: calc(100vh - 70px);
+    background-color: #262837;
+    width: 100%;
+    
+}
+
+
+
+
+.triangle{
+    position: absolute;
+    bottom: 0px;
+    border-bottom:20px solid #fff;
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    margin-left: 20px;
+}
+
+
+
+
+.c-name{
+    padding: 70px 0 0 0;
+    margin: 0 27%;
+}
+
+.c-name h2{
+    color: #fff;
+    cursor: default;
+    display: inline;
+}
+
+.c-name p{
+    color: grey;
+}
+
+
+.c-line{
+    display: flex;
+    margin: 0 27%;
+}
+
+.c-photo{
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 201px;
+    position: relative;
+}
+
+.change-photo{
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+    left: 84px;
+    display: none;
+}
+
+
+.change-name{
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.i-changename{
+    display: none;
+}
+.i-changename sup{
+    top:-1.5em;
+
+}
+
+.change-name:hover{
+    color: #e8454a;
+}
+
+.change-photo i{
+    cursor: pointer;
+}
+
+.change-photo i:hover{
+    color: #e8454a;
+}
+
+.change-photo input{
+    display: none;
+}
+
+.c-row:not(:first-child){
+    margin: 30px 0;
+}
+
+.c-label{
+    float: left;
+    padding: 2px 10px 0 0;
+    color: #fff;
+    width: 36%;
+    text-align: right;
+}
+
+.c-input input{
+    width: 42%;    
+}
+
+.c-input select{
+    width: 42%;
+}
+
+.c-photo img{
+    width: 100%;
+}
+
+
+.c-add{
+    display: inline;
+    font-size: 20px;
+    color: #fff;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.c-add:hover{
+    color: #e8454a;
+}
+.c-info{
+    margin: 0 5%;
+    flex: 1 1;
+}
+
+.genre{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background-color: #e8454a;
+    width: 110px;
+}
+
+.genre p {
+    margin: 0;
+    padding: 3px;
+    display: inline-block;
+}
+
+.genre i {
+    float: right;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.genre i:hover{
+    color: #262837;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #2b2e4a;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    z-index: 4;
+}
+
+.footerleft{
+    flex: 2 1 ;
+}
+
+.footerright{
+    flex: 1 2 ;
+    text-align: right;
+}
+
+.footericon{
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.footericon:hover{
+    color:#e8454a;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footericon a:hover{
+    color:#e8454a;
+}
+
+.triangle-menu{
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:50px;
+    left: 16px;
+    transition: 0.3s;
+}
+
+.menu{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 30px;
+    top:70px;
+    transition: 0.3s;
+    
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    margin: 10px 0;
+}
+
+.menu li a{
+    color:black; 
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color:#e8454a;
+    text-decoration: underline;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+}
+
+.modal { 
+    position: absolute; 
+    top:50%; 
+    left: 50%; 
+    display: inline-block; 
+    background: #fff; 
+    color:#2b2e4a ; 
+    text-align: left; 
+    width: 500px;
+    height: 425px;
+    margin-left: -250px;
+    margin-top: -212.5px; 
+    z-index: 3;
+}
+
+.modal-btn{
+    background-color: #bbb;
+    border: none;
+    width: 50%;
+    float: left;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login h3{
+    margin: 0;
+    padding: 20px;
+    clear: both;
+}
+
+.login-input{
+    height: 30px;
+    color: #bbb;
+    width: 80%;
+    transition: 0.3;
+    border: none;
+    border-bottom: 3px solid #e8454a;
+    padding: 5px 10px 15px 10px;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    outline: none;
+    font-size: 30px;
+}
+
+.col{
+    width: 50%;
+    float:left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-sign{
+    height: 50px;
+    background-color: #e8454a;
+    width: 90%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid #c1454a;
+}
+
+.modal a{
+    text-decoration: none;
+    color: #e8454a;
+}
+
+.btn-sign:active{
+    border-bottom: none;
+    margin-top: 3px;
+}
+
+.btn-sign:hover{
+    outline: none;
+    color: #2b2e4a;
+}
+
+.modal-content .modal-btn:nth-child(1){
+    background-color: #fff;
+    color:#c1454a;
+}
+
+.hidden{
+    display: none;
+}
+
+.content{
+    position: relative;
+    z-index: 3;
+}
+
+
+.btn-content{
+    height: 50px;
+    background-color: #e8454a;
+    width: 30%;
+    float: right;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid #c1454a;
+}
+
+.btn-content:active{
+    border-bottom: none;
+    margin-top: 3px;
+}
+
+.btn-content:hover{
+    outline: none;
+    color: #2b2e4a;
+}
+@media(min-width:0) and (max-width:1024px){
+
+    .c-line{
+        flex-direction: column;
+    }
+
+    .c-photo{
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    .c-name{
+        margin-left: 39%;
+        padding-bottom: 15px;
+    }
+
+    .btn-content{
+        width: 150px;
+    }
+    
+}

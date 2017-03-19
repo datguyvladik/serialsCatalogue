@@ -1,0 +1,457 @@
+.main{
+    height: 100%;
+    background-color: #262837;
+}
+
+*{
+    font-family: 'Merriweather', serif;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color: #2b2e4a;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    z-index: 4;
+}
+
+.headerlogo img:hover{
+    cursor: pointer;
+}
+
+.searchicon{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.headericon{
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.headericon i{
+    cursor: pointer;
+}
+.headerleft{
+    flex: 1 1 ;
+}
+
+.headerright{
+    flex: 2 1 ;
+    text-align: right;
+}
+
+.headericon:hover{
+    color:#e8454a;
+}
+.headerlogo img{
+    width: 100%;
+}
+
+.headerlogo{
+    width: 40px;
+    height: 40px;
+    padding: 15px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    min-height: calc(100vh - 70px);
+    background-color: #262837;
+    width: 100%;
+    
+}
+
+
+
+
+.triangle{
+    position: absolute;
+    bottom: 0px;
+    border-bottom:20px solid #fff;
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    margin-left: 20px;
+}
+
+
+
+
+.c-name{
+    padding: 70px 0 0 0;
+    margin: 0 20%;
+}
+
+.c-name h2{
+    color: #fff;
+}
+
+.c-name p{
+    color: grey;
+}
+
+.c-line{
+    display: flex;
+    margin: 0 20%;
+}
+
+.c-photo{
+    flex: 1 1 200px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.c-photo img{
+    width: 100%;
+}
+
+.c-info{
+    margin: 0 5%;
+}
+.t-info{
+    border-collapse: collapse;
+}
+
+.t-info p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.t-info tr{
+    border-bottom: 1px dotted #999;
+}
+
+.t-info td{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.t-info td:first-child{
+    color: #e8454a;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+
+.t-info a {
+    text-decoration: underline;
+}
+
+.t-info a:hover{
+    color:#e8454a
+}
+
+.c-best{
+    flex: 1 1;
+    position: relative;
+}
+
+.c-best ul{
+    list-style: none;
+    padding: 0;
+}
+
+.c-best ul li{
+    padding-bottom: 5px;
+}
+
+.c-best h3{
+    color: #e8454a;
+}
+
+.c-best ul li a{
+    text-decoration: underline;
+}
+
+.oskar{
+    border: 1px solid #fff;
+    color: #000;
+    width: 350px;
+    background-color: #fff
+}
+
+.oskar h2{
+    color: #e8454a;
+    padding: 15px;
+    margin: 0;
+}
+
+.oskar a{
+    padding-left: 15px;
+    padding-right: 30px;
+    text-decoration: underline;
+    color: #000;
+}
+
+.oskar-img{
+    position: relative;
+    cursor: pointer;
+}
+.triangle-oskar{
+    position: absolute;
+    bottom: 0px;
+    border-bottom:10px solid #fff;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    margin-left: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: #2b2e4a;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    z-index: 4;
+}
+
+.footerleft{
+    flex: 2 1 ;
+}
+
+.footerright{
+    flex: 1 2 ;
+    text-align: right;
+}
+
+.footericon{
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.footericon:hover{
+    color:#e8454a;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footericon a:hover{
+    color:#e8454a;
+}
+
+.triangle-menu{
+    border-bottom: 20px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top:50px;
+    left: 16px;
+    transition: 0.3s;
+}
+
+.menu{
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 30px;
+    top:70px;
+    transition: 0.3s;
+    
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    margin: 10px 0;
+}
+
+.menu li a{
+    color:black; 
+    font-family: 'Merriweather', serif;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color:#e8454a;
+    text-decoration: underline;
+}
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 3;
+}
+
+.modal { 
+    position: absolute; 
+    top:50%; 
+    left: 50%; 
+    display: inline-block; 
+    background: #fff; 
+    color:#2b2e4a ; 
+    text-align: left; 
+    width: 500px;
+    height: 425px;
+    margin-left: -250px;
+    margin-top: -212.5px; 
+    z-index: 3;
+}
+
+.modal-btn{
+    background-color: #bbb;
+    border: none;
+    width: 50%;
+    float: left;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login h3{
+    margin: 0;
+    padding: 20px;
+    clear: both;
+}
+
+.login-input{
+    height: 30px;
+    color: #bbb;
+    width: 80%;
+    transition: 0.3;
+    border: none;
+    border-bottom: 3px solid #e8454a;
+    padding: 5px 10px 15px 10px;
+    margin-bottom: 30px;
+    margin-left: 8%;
+    outline: none;
+    font-size: 30px;
+}
+
+.col{
+    width: 50%;
+    float:left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-sign{
+    height: 50px;
+    background-color: #e8454a;
+    width: 90%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid #c1454a;
+}
+
+.modal a{
+    text-decoration: none;
+    color: #e8454a;
+}
+
+.btn-sign:active{
+    border-bottom: none;
+    margin-top: 3px;
+}
+
+.btn-sign:hover{
+    outline: none;
+    color: #2b2e4a;
+}
+
+.modal-content .modal-btn:nth-child(1){
+    background-color: #fff;
+    color:#c1454a;
+}
+
+.hidden{
+    display: none;
+}
+
+.content{
+    position: relative;
+    z-index: 3;
+}
+
+@media(min-width:0) and (max-width:1024px){
+    .c-line{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    .c-name{
+        text-align: center;
+    }
+    
+    .c-photo{
+        margin: auto;
+    }
+
+    .c-best{
+        margin-left: 20px;
+    }
+
+    .ul-cardinats{
+        float: left;
+    }
+
+    .oskar-cardinats{
+        float: right;
+        margin-top:60px;
+    }
+
+}

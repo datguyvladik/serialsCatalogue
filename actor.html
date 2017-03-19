@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleactor.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="js/mouseover.js"></script>
+    <script src="js/triangelhidden.js"></script>
+    <script src="js/redline.js"></script>
+    <script src="js/nohide.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="triangle-menu hidden" id = "triangle-menu"></div>
+            <div class="menu hidden" id="menu">
+                <ul>
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="list.html">Список сериалов</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </div>
+            <div class="headerleft">
+                <div class="headerlogo">
+                    <img src="img/logo.png" onclick="hiden()" alt="" id = "logo" onmouseover="reimg()" onmouseout="reimg2()">
+                </div>
+            </div>
+            <div class="headerright" >
+                <div class="headericon" onclick="nohide()">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+                <div class="searchicon">
+                    <form id="demo-b">
+                        <input type="search" placeholder="Искать">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="overlay hidden" id = "modal">
+                <div class="modal">
+                    <div class="modal-content">
+                        <button class="modal-btn">Войти</button>
+                        <button class="modal-btn">Регистрация</button>
+                        <div class="login">
+                            <h3>Email</h3>
+                            <input type="text" class ="login-input">
+                            <h3>Пароль</h3>
+                            <input type="password" class ="login-input">
+                            <div class="col">
+                                <a href="">Забыли пароль?</a>
+                            </div>
+                            <div class="col">
+                                <button class="btn-sign">
+                                    Войти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-name">
+                <h2>Бен Аффлек</h2>
+                <p>Ben Affleck</p>
+            </div>
+
+            <div class="c-line">
+                <div class="c-photo">
+                    <img src="img/afflek.jpg" alt="">
+                </div>
+                <div class="c-info">
+                    <table class="t-info">
+                        <tr>
+                            <td> Карьера:</td>
+                            <td>
+                                <a href="#">Актер</a>
+                                <a href="#"> Продюсер</a>
+                                <a href="#"> Сценарист</a>
+                                <a href="#"> Режжисер</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Рост:</td>
+                            <td>
+                                <p>1.92 м</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения:</td>
+                            <td>
+                                <p>15 августа 1972 года</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Жанры:</td>
+                            <td>
+                                <a href="#">драма</a>
+                                <a href="#"> комедия</a>
+                                <a href="#"> триллер</a>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>Всего фильмов:</td>
+                            <td>
+                                <p>86, 1981 — 2018</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="c-best">
+                    <div class="ul-cardinats">
+                        <h3>Лучшие фильмы:</h3>
+                        <ul>
+                            <li><a href="#">Умница Уилл Хантинг</a></li>
+                            <li><a href="#">Исчезнувшая</a></li>
+                            <li><a href="#">Перл-Харбор</a></li>
+                            <li><a href="#">Армагедон</a></li>
+                            <li><a href="#">Догма</a></li>
+                        </ul>
+                    </div>
+                    <div class="oskar-cardinats">
+                        <div class="oskar-img" onclick="oskarhiden()">
+                            <img src="img/oscar.png" alt=""> 
+                            <div class="triangle-oskar hidden" id = "triangle-oskar">
+                            </div>
+                        </div>
+                        <div class="oskar hidden" id = "oskar">
+                            <h2>Оскар</h2>
+                            <p><a href="#">2013</a>«Операция «Арго»</p>
+                            <p><a href="#">1998</a>«Умница Уилл Хантинг»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+                
+        </div>
+
+
+         <div class="footer">
+            <div class="footerleft">
+            </div>
+            <div class="footerright">
+                <div class="footericon">
+                    <a href="https://vk.com/datguyvladik" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                </div>
+                <div class="footericon">
+                    <a href="https://www.instagram.com/vlad.erm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

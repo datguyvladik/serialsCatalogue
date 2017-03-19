@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleplayer.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/fancybox.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="js/mouseover.js"></script>
+    <script src="js/triangelhidden.js"></script>
+    <script src="js/redline.js"></script>
+    <script src="js/nohide.js"></script>
+
+    <script type="text/javascript" src="js/js_jquery.js"></script> 
+    <script type="text/javascript" src="js/jquery.selectbox.js"></script>
+    
+    <script type="text/javascript">
+      function setBigImage(foto) {
+        $("#adpdp14").attr('href', $(foto).parent('.it').children('a').attr('href'));
+        document.getElementById("dp14").src = foto.src;
+    }
+    </script>
+</head>
+<body>
+
+    
+    <div class="main">
+        <div class="header">
+             <div class="triangle-menu hidden" id = "triangle-menu"></div>
+            <div class="menu hidden" id="menu">
+                <ul>
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="list.html">Список сериалов</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+                </ul>
+            </div>
+            <div class="headerleft">
+                <div class="headerlogo">
+                    <img src="img/logo.png" onclick="hiden()" alt="" id = "logo" onmouseover="reimg()" onmouseout="reimg2()">
+                </div>
+            </div>
+            <div class="headerright" >
+                <div class="headericon" onclick="nohide()">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+                <div class="searchicon">
+                    <form id="demo-b">
+                        <input type="search" placeholder="Искать">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="overlay hidden" id = "modal">
+                <div class="modal">
+                    <div class="modal-content">
+                        <button class="modal-btn">Войти</button>
+                        <button class="modal-btn">Регистрация</button>
+                        <div class="login">
+                            <h3>Email</h3>
+                            <input type="text" class ="login-input">
+                            <h3>Пароль</h3>
+                            <input type="password" class ="login-input">
+                            <div class="col">
+                                <a href="">Забыли пароль?</a>
+                            </div>
+                            <div class="col">
+                                <button class="btn-sign">
+                                    Войти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-line">
+                <div class="c-banner">
+                    <img src="img/9.jpg" alt="">
+                </div>
+                <div class="c-about">
+                    <div class="c-name">
+                        <h1>Детектиове агенство Дирка Джентли</h1>
+                    </div>
+                    <div class="c-description">
+                        <p>Главный герой этого сериала никогда не отступит перед сложными расследованиями. Детектив Джентли и его верный, но жутко недовольный всем на свете помощник Тодд готовы отправиться на раскрытие очередного преступления. Каждый новый сезон эти персонажи будут расследовать сложное запутанное дело. В этот раз они сталкиваются с тайной, которую никто не мог раскрыть уже давно. На пути главных героев ожидают реальные опасности. Каждая новая серия - это очередной шаг к разгадке, а также очередное испытание, которое Джентли и Тодду предстоит пройти, несмотря на трудности и некоторые проблемы с логическим мышлением.</p>
+
+                        <p><span>Оригинал:</span> Dirk Gently's Holistic Detective Agency </p>
+                        <p><span>Альтернативное название:</span> Холистическое детективное агентство Дирка Джентли</p>
+                        <p><span>Жанр:</span> комедия, фантастические</p>
+                        <p><span>Страна:</span> США, Великобритания</p>
+                        <p><span>Вышел:</span> 2016</p>
+                        <p><span>Режиссер:</span> Пако Кабесас, Дин Паризо, Майкл Патрик Джэнн</p>
+                        <p><span>Роли:</span> <a href="actor.html">Кристиан Бако</a>, <a>Сэмюэл Барнетт</a>, <a>Нил Браун мл.</a>, <a>Аарон Дуглас</a>, <a href="">Фиона Дуриф</a>, <a>Майкл Эклунд</a>, <a>Джейд Эшете</a>, <a>Мфо Коахо</a>, <a>Ханна Маркс</a>, <a>Дастин Миллиган</a></p>              
+                    </div>
+                     <div class="slider">
+                        <div class="img">
+                            <a href="img/dirk5.jpg"  rel="example_group" id="adpdp14">
+                                <img src="img/dirk5.jpg" id="dp14" style="margin-bottom: 3px;" alt="" />
+                            </a>
+                         </div>
+                        <div class="thumbs">
+                            <div class="it">
+                                <a style="display:none;" href="img/dirk5.jpg" rel="example_group">
+                                </a>
+                                <img src="img/dirk5.jpg" onclick='setBigImage(this);' alt="" />
+                            </div>
+                            <div class="it">
+                                <a style="display:none;" href="img/dirk1.jpg" rel="example_group">
+                                </a>
+                                <img src="img/dirk1.jpg" onclick='setBigImage(this);' alt="" />
+                            </div>
+                            <div class="it">
+                                <a style="display:none;" href="img/dirk2.jpg" rel="example_group">
+                                </a>
+                                <img src="img/dirk2.jpg" onclick='setBigImage(this);' alt="" />
+                            </div>
+                            <div class="it">
+                                <a style="display:none;" href="img/dirk3.jpg" rel="example_group">
+                                </a>
+                                <img src="img/dirk3.jpg" onclick='setBigImage(this);' alt="" />
+                            </div>
+                            <div class="it">
+                                <a style="display:none;" href="img/dirk4.jpg" rel="example_group">
+                                </a>
+                                <img src="img/dirk4.jpg" onclick='setBigImage(this);' alt="" />
+                            </div>
+                            <div class="clr">   
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="videoplayer">
+                <video src="video/1.mp4" controls></video>
+            </div>
+
+            <div class="comments">
+                <div class="add-com">
+                    <textarea name="" id="">
+                    </textarea>
+                    <div class="add-btn">
+                        <button class="btn">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commentblock">
+                <div class="com-av">
+                    <img src="img/av1.jpg" alt="">
+                </div>
+                <div class="comment">
+                    <div class="com-name">
+                        <div class="com-number">
+                            <h2>#3</h2>
+                        </div>
+                        <h2>Jake</h2>
+                    </div>
+                    <div class="comm-text">
+                        <p>Просто крутой сериал!!</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="commentblock">
+                <div class="com-av">
+                    <img src="img/av2.jpg" alt="">
+                </div>
+                <div class="comment">
+                    <div class="com-name">
+                        <div class="com-number">
+                            <h2>#2</h2>
+                        </div>
+                        <div class="com-del">
+                            <h2><i class="fa fa-times" aria-hidden="true"></i></h2>
+                        </div>
+                        <h2>Finn</h2>
+                    </div>
+                    <div class="comm-text">
+                        <p>Лучшее что я смотрел!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="commentblock">
+                <div class="com-av">
+                    <img src="img/av3.png" alt="">
+                </div>
+                <div class="comment">
+                    <div class="com-name">
+                        <div class="com-number">
+                            <h2>#1</h2>
+                        </div>
+                        <h2>Lady Rainicorn</h2>
+                    </div>
+                    <div class="comm-text">
+                        <p>Я ничего не поняла :(</p>
+                    </div>
+                </div>
+            </div>
+
+
+    
+
+
+            
+
+                
+        </div>
+
+
+         <div class="footer">
+            <div class="footerleft">
+            </div>
+            <div class="footerright">
+                <div class="footericon">
+                    <a href="https://vk.com/datguyvladik" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                </div>
+                <div class="footericon">
+                    <a href="https://www.instagram.com/vlad.erm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

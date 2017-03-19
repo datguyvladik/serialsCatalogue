@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="js/triangelhidden.js"></script>
+    <script src="js/redline.js"></script>
+    <script src="js/nohide.js"></script>
+    <script src="js/mouseover.js"></script>
+</head>
+
+<body>
+<div>
+    <div class="header">
+        <div class="triangle-menu hidden" id = "triangle-menu"></div>
+        <div class="menu hidden" id="menu">
+            <ul>
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="list.html">Список сериалов</a></li>
+                <li><a href="profile.html">Личный кабинет</a></li>
+            </ul>
+        </div>
+        <div class="headerleft">
+            <div class="headerlogo">
+                <img src="img/logo.png" onclick="hiden()" alt="" id = "logo" onmouseover="reimg()" onmouseout="reimg2()">
+            </div>
+        </div>
+        <div class="headerright" >
+            <div class="headericon" onclick="nohide()">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            
+            <div class="searchicon">
+            <form id="demo-b">
+                <input type="search" placeholder="Искать">
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="content">
+            <div class="overlay hidden" id = "modal">
+                <div class="modal">
+                    <div class="modal-content">
+                        <button class="modal-btn">Войти</button>
+                        <button class="modal-btn">Регистрация</button>
+                        <div class="login">
+                            <h3>Email</h3>
+                            <input type="text" class ="login-input">
+                            <h3>Пароль</h3>
+                            <input type="password" class ="login-input">
+                            <div class="col">
+                                <a href="">Забыли пароль?</a>
+                            </div>
+                            <div class="col">
+                                <button class="btn-sign">
+                                    Войти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <br id="tab2" /><br id="tab3" />
+                <a href="#tab1" id="atab1" onclick="redline1()" class="redline">Популярное</a>
+                <a href="#tab2" id="atab2" onclick="redline2()">Новинки</a>
+                <a href="#tab3" id="atab3" onclick="redline3()">Последние обновления</a>
+
+                <div id="#divtab1">
+                    <div class="popular">
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/1.jpg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Мир Дикого Запада</h2>
+                                <p>В футуристическом парке развлечений андроиды на фоне исторических декораций становятся рабами людей, выполняя
+                                    рутинные задания, пока в один момент сбой в программе не превращает их в опасных убийц.</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/2.jpeg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Мистер Робот</h2>
+                                <p>История молодого программиста Эллиота, страдающего социофобией и решившего, что единственный приемлемый для
+                                    него способ взаимодействия с людьми — это профессия хакера.
+                                </p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/3.jpeg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Детективное Агенство Дирка Джентли</h2>
+                                <p>Сериал, рассказывающий о приключениях частного детектива Джентли и его невольного помощника Тодда. Каждый
+                                    сезон они расследуют некую большую, казалось бы, совершенно безумную тайну и сталкиваются со странными
+                                    и временами опасными персонажами. В каждой серии они приближаются к разгадке на несколько шагов, хотя
+                                    их расследование страдает от недостатка логики.</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/4.jpg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Игра Престолов</h2>
+                                <p>
+                                    К концу подходит время благоденствия, и лето, длившееся почти десятилетие, угасает. Вокруг средоточия власти Семи королевств,
+                                    Железного трона, зреет заговор, и в это непростое время король решает искать поддержки у друга юности
+                                    Эддарда Старка. В мире, где все — от короля до наемника — рвутся к власти, плетут интриги и готовы вонзить
+                                    нож в спину, есть место и благородству, состраданию и любви. Между тем, никто не замечает пробуждение
+                                    тьмы из легенд далеко на Севере — и лишь Стена защищает живых к югу от нее.</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+
+                <div id="#divtab2">
+                    <div class="popular">
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/5.jpg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Шерлок</h2>
+                                <p>События разворачиваются в наши дни. Он прошел Афганистан, остался инвалидом. По возвращении в родные края
+                                    встречается с загадочным, но своеобразным гениальным человеком. Тот в поиске соседа по квартире. Лондон,
+                                    2010 год. Происходят необъяснимые убийства. Скотланд-Ярд без понятия, за что хвататься. Существует лишь
+                                    один человек, который в силах разрешить проблемы и найти ответы на сложные вопросы.</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/6.jpg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Хроники Шаннары</h2>
+                                <p>События сериала происходят в далёком будущем. Войны разделили Северную Америку на 4 части. На какой-то из
+                                    них обитают эльфы, на иной — люди, на третьей — тролли и на четвёртой — дворфы. Основными персонажами
+                                    сериала окажутся отпрыски древнего рода эльфов — Шаннара. Именно от них будет зависеть будущая судьба
+                                    планеты…
+                                </p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/10.jpeg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Радиоволна</h2>
+                                <p>В центре внимания проекта оказывается история, которая рассказывает о жизни офицера полиции. С этим человеком происходит что-то невероятное. Однажды она смогла выйти на связь с умершим отцом при помощи радиоволн. Казалось бы, что этого быть не может, однако девушка-полицейская до сих пор пытается найти объяснение этой аномалии. Вскоре главная героиня понимает, что отец не зря выходит с ней на связь. Девушка начинает получать все новые и новые сообщения, которые помогают ей в расследовании непростых дел. Кажется, что офицер полиции обрела настоящее секретное оружие против преступности, однако привычная спокойная жизнь навсегда покидает ее.</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-banner">
+                                <img src="img/11.jpg" alt="Мир дикого запада">
+                                <div class="triangle">
+                                </div>
+                            </div>
+                            <div class="p-about">
+                                <h2>Лемони Сникет: 33 несчастья</h2>
+                                <p>В центре внимания сериала - большая семья, которая пытается прийти в себя после страшного пожара, который разрушил их дом. Семейство Бодлер остается на улице. Дети Вайолет, Солнышко и Клаус потеряли своих родителей в этой бушующей стихии. Ребята отправляются к графу Олафу на попечение. Тот принимает детей, но при этом очень хочет захватить в свои владения все то, что ранее им принадлежало! Дети же всячески пытаются найти тех, кто их защитит, считая, что Олаф не просто их опекун, а настоящий тиран, который мечтает о смерти ребят. Конечно же, детей никто не слушает. Однако все же находятся те, кто готов помочь!</p>
+                                <button class="btn"><a href="player.html">Смотреть</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="#divtab3">
+                    <div class="update">
+                        <div class="u-item">
+                            <img src="img/12.jpeg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/12.jpg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/13.jpg" alt="">
+                        </div>
+                        <div class="u-item">
+                            <img src="img/14.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="u-item">
+                            <img src="img/15.jpeg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/16.jpg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/17.jpg" alt="">
+                        </div>
+                        <div class="u-item">
+                            <img src="img/18.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="u-item">
+                            <img src="img/19.jpg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/20.jpg" alt="">
+                        </div>
+
+                        <div class="u-item">
+                            <img src="img/21.png" alt="">
+                        </div>
+                        <div class="u-item">
+                            <img src="img/22.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footerleft">
+        </div>
+        <div class="footerright">
+            <div class="footericon">
+                <a href="https://vk.com/datguyvladik" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            </div>
+            <div class="footericon">
+                <a href="https://www.instagram.com/vlad.erm/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
